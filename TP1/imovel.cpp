@@ -13,6 +13,8 @@ Imovel::Imovel(int id, int numero, int quartos, int banheiros, float valor,
   this->cidade = cidade;
 }
 
+Imovel::~Imovel() {}
+
 int Imovel::getId() { return this->id; }
 
 void Imovel::setId(int id) { this->id = id; }

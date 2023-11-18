@@ -1,6 +1,12 @@
 #ifndef IMOVEL_H
 #define IMOVEL_H
+#include <fstream>
+#include <iomanip>
 #include <iostream>
+#include <sstream>
+#include <string>
+#include <vector>
+
 using namespace std;  // coloca o std:: em todos os lugares que precisam
 
 class Imovel {
@@ -12,6 +18,7 @@ class Imovel {
  public:
   Imovel(int id, int numero, int quartos, int banheiros, float valor,
          string proprietario, string rua, string bairro, string cidade);
+  virtual ~Imovel();
   int getId();
   void setId(int id);
   float getValor();
@@ -30,6 +37,7 @@ class Imovel {
   void setQuartos(int qtdQuartos);
   int getBanheiros();
   void setBanheiros(int banheiros);
+  friend ostream& operator<<(ostream& os, Imovel& imovel);
 };
 
 #endif  // IMOVEL_H

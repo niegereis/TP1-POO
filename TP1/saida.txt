@@ -1,0 +1,460 @@
+- - - - -
+	Proprietário Kurt Turnbull
+	Preço 270000
+	Número de quartos: 365
+	Rua: The Lawns
+	Bairro: West Cardoon
+	Cidade: Mobile
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Tyrell Tang
+	Preço 315000
+	Número de quartos: 494
+	Rua: Back Road
+	Bairro: King Point
+	Cidade: Thompson
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Niyah Lewis
+	Preço 550000
+	Número de quartos: 88
+	Rua: Blenheim Close
+	Bairro: Larch Gardens
+	Cidade: Orford
+	Característica Específica: Casa tem 2 andares!
+- - - - -
+
+- - - - -
+	Proprietário Libbie Reilly
+	Preço 280000
+	Número de quartos: 53
+	Rua: Rose Street
+	Bairro: Prospect Place
+	Cidade: Hoquiam
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Szymon Gallegos
+	Preço 800000
+	Número de quartos: 72
+	Rua: Seymour Road
+	Bairro: Saddle Forest
+	Cidade: Saint Boniface
+	Característica Específica: Chácara não tem piscina...
+- - - - -
+
+- - - - -
+	Proprietário Lila Ellison
+	Preço 195000
+	Número de quartos: 1
+	Rua: Orchard Way
+	Bairro: Ripple Point
+	Cidade: Chulmleigh
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Tomi French
+	Preço 160000
+	Número de quartos: 32
+	Rua: Waverley Road
+	Bairro: Fort Nutmeg
+	Cidade: Newton-le-Willows
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Amani Riley
+	Preço 300000
+	Número de quartos: 146
+	Rua: Broadway
+	Bairro: Teal Square
+	Cidade: Penrith
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Menaal Keeling
+	Preço 600000
+	Número de quartos: 55
+	Rua: Laburnum Grove
+	Bairro: Mount Woodruff
+	Cidade: Higham Ferrers
+	Característica Específica: Chácara tem piscina!
+- - - - -
+
+- - - - -
+	Proprietário Darragh Benton
+	Preço 180000
+	Número de quartos: 13
+	Rua: Bridge Street
+	Bairro: Annatto City
+	Cidade: Staunton
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Damien Boyce
+	Preço 900000
+	Número de quartos: 98
+	Rua: Elm Close
+	Bairro: Sallow Plains
+	Cidade: Great Dunmow
+	Característica Específica: Casa tem 3 andares!
+- - - - -
+
+- - - - -
+	Proprietário Nina Hunter
+	Preço 500000
+	Número de quartos: 186
+	Rua: Parsonage Lane
+	Bairro: Maroon Hook
+	Cidade: Cherokee
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Simone Ashley
+	Preço 255000
+	Número de quartos: 22
+	Rua: Wisdom
+	Bairro: Parsonage Lane
+	Cidade: Penrith
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Millie-Mae Carr
+	Preço 265000
+	Número de quartos: 10
+	Rua: Mary Street
+	Bairro: Myers Falls
+	Cidade: Eastchester
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Lila Ellison
+	Preço 236000
+	Número de quartos: 69
+	Rua: Back Road
+	Bairro: Saddle Forest
+	Cidade: Orford
+	Característica Específica: Chácara não tem piscina...
+- - - - -
+
+- - - - -
+	Proprietário Kendall Muir
+	Preço 200000
+	Número de quartos: 68
+	Rua: Kings Road
+	Bairro: Amethyst Point
+	Cidade: Shiprock
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Georgina Hendrix
+	Preço 290000
+	Número de quartos: 35
+	Rua: Woodhouse Lane
+	Bairro: Queen Bay
+	Cidade: Busselton
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Simone Ashley
+	Preço 770000
+	Número de quartos: 11
+	Rua: Windmill Lane
+	Bairro: Teal Wharf
+	Cidade: Uckfield
+	Característica Específica: Casa tem 2 andares!
+- - - - -
+
+- - - - -
+	Proprietário Simone Ashley
+	Preço 455000
+	Número de quartos: 79
+	Rua: Winterfield
+	Bairro: Aston
+	Cidade: Eastchester
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Amani Riley
+	Preço 100000
+	Número de quartos: 69
+	Rua: Back Road
+	Bairro: Saddle Forest
+	Cidade: Saint Boniface
+	Característica Específica: Chácara tem piscina!
+- - - - -
+
+- - - - -
+	Proprietário Amani Riley
+	Preço 670000
+	Número de quartos: 313
+	Rua: Seymour Road
+	Bairro: West Cardoon
+	Cidade: Great Dunmow
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Lila Ellison
+	Preço 275000
+	Número de quartos: 111
+	Rua: Stark Road
+	Bairro: Ripple Park
+	Cidade: Hoquiam
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Lila Ellison
+	Preço 170000
+	Número de quartos: 778
+	Rua: Fisher Square
+	Bairro: Hansa Plaza
+	Cidade: Staunton
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Georgina Hendrix
+	Preço 332000
+	Número de quartos: 356
+	Rua: Hoffman Road
+	Bairro: West Cardoon
+	Cidade: Staunton
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Darragh Benton
+	Preço 355000
+	Número de quartos: 97
+	Rua: Denton
+	Bairro: Eastchester
+	Cidade: New York
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Tomi French
+	Preço 615000
+	Número de quartos: 339
+	Rua: Norton
+	Bairro: Lower Byzantine
+	Cidade: Chulmleigh
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Tomi French
+	Preço 421000
+	Número de quartos: 200
+	Rua: Seymour Road
+	Bairro: West Cardoon
+	Cidade: Great Dunmow
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Simone Ashley
+	Preço 295000
+	Número de quartos: 81
+	Rua: Amazon
+	Bairro: Cobalt Walk
+	Cidade: Mobile
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Nina Hunter
+	Preço 333000
+	Número de quartos: 913
+	Rua: Sailor Field
+	Bairro: Lower Byzantine
+	Cidade: Busselton
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Nina Hunter
+	Preço 743000
+	Número de quartos: 14
+	Rua: Square Park
+	Bairro: West Cardoon
+	Cidade: Great Dunmow
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Libbie Reilly
+	Preço 223000
+	Número de quartos: 41
+	Rua: Turton
+	Bairro: Aston
+	Cidade: Uckfield
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Szymon Gallegos
+	Preço 245000
+	Número de quartos: 53
+	Rua: Faith
+	Bairro: Aston
+	Cidade: Chulmleigh
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Darragh Bentong
+	Preço 333000
+	Número de quartos: 64
+	Rua: Blue Lake
+	Bairro: Snow Neck
+	Cidade: Hoquiam
+	Característica Específica: Chácara tem piscina!
+- - - - -
+
+- - - - -
+	Proprietário Libbie Reilly
+	Preço 628000
+	Número de quartos: 99
+	Rua: Seymour Road
+	Bairro: West Cardoon
+	Cidade: Busselton
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Nina Hunter
+	Preço 272000
+	Número de quartos: 22
+	Rua: Seymour Road
+	Bairro: Fiddlehead City
+	Cidade: Busselton
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Amani Riley
+	Preço 329000
+	Número de quartos: 66
+	Rua: Seymour Road
+	Bairro: West Cardoon
+	Cidade: Great Dunmow
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Nina Hunter
+	Preço 666000
+	Número de quartos: 58
+	Rua: Heathan Forest
+	Bairro: Mount Woodruff
+	Cidade: Higham Ferrers
+	Característica Específica: Chácara não tem piscina...
+- - - - -
+
+- - - - -
+	Proprietário Simone Ashley
+	Preço 655000
+	Número de quartos: 24
+	Rua: West road
+	Bairro: Aston
+	Cidade: Newton-le-Willows
+	Característica Específica: Casa tem 2 andares!
+- - - - -
+
+- - - - -
+	Proprietário Georgina Hendrix
+	Preço 455000
+	Número de quartos: 38
+	Rua: Winterfield
+	Bairro: Aston
+	Cidade: Orford
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
+- - - - -
+	Proprietário Kurt Turnbull
+	Preço 1e+06
+	Número de quartos: 265
+	Rua: Groove Park
+	Bairro: Fawn Neck
+	Cidade: Higham Ferrers
+	Característica Específica: Chácara tem piscina!
+- - - - -
+
+- - - - -
+	Proprietário Libbie Reilly
+	Preço 462000
+	Número de quartos: 15
+	Rua: Tatton Road
+	Bairro: Amber Plaza
+	Cidade: Great Dunmow
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Menaal Keeling
+	Preço 916000
+	Número de quartos: 613
+	Rua: Laburnum Grove
+	Bairro: Mount Woodruff
+	Cidade: Higham Ferrers
+	Característica Específica: Chácara não tem piscina...
+- - - - -
+
+- - - - -
+	Proprietário Niyah Lewis
+	Preço 743000
+	Número de quartos: 333
+	Rua: Laburnum Grove
+	Bairro: Mount Cornflower
+	Cidade: Higham Ferrers
+	Característica Específica: Chácara não tem piscina...
+- - - - -
+
+- - - - -
+	Proprietário Niyah Lewis
+	Preço 888000
+	Número de quartos: 65
+	Rua: Seymour Road
+	Bairro: Indigo Village
+	Cidade: Newton-le-Willows
+	Característica Específica: Apartamento não tem elevador...
+- - - - -
+
+- - - - -
+	Proprietário Kurt Turnbull
+	Preço 1.555e+06
+	Número de quartos: 68
+	Rua: Winterfield
+	Bairro: Upper Sunrise
+	Cidade: Orford
+	Característica Específica: Casa tem 3 andares!
+- - - - -
+
+- - - - -
+	Proprietário Simone Ashley
+	Preço 255000
+	Número de quartos: 23
+	Rua: Winland
+	Bairro: Sun Knigth
+	Cidade: Orford
+	Característica Específica: Casa tem 1 andares!
+- - - - -
+
