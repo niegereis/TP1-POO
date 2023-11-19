@@ -16,7 +16,6 @@ class Apartamento : public Imovel {
               int id, int numero, int quartos, int banheiros, float valor,
               string proprietario, string rua, string bairro, string cidade);
   friend ostream& operator<<(ostream& os, Apartamento& apartamento);
-  string obterCaracteristica();
   int getAndar();
   void setAndar(int andar);
   float getTaxaCondominio();
