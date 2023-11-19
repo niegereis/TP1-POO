@@ -35,6 +35,7 @@ vector<Imovel*> obterListaDeImoveisPelaCidadeDoImovel(
 vector<Imovel*> obterListaDeImoveisPeloProprietarioDoImovel(
     vector<Imovel*> listaDeImoveis, string proprietario);
 map<string, vector<Imovel*>> tabelaHash(vector<Imovel*> listaDeImoveis);
+void limpaBuffer();
 };  // namespace FuncoesAuxiliares
 
 #endif  // FUNCOES_AUXILIARES_H

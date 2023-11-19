@@ -61,8 +61,7 @@ int main() {
     cout << "Digite a opção desejada: ";
     cin >> opcao;
 
-    while ((getchar()) != '\n')
-      ;
+    limpaBuffer();
 
     if (opcao == 1) {
       string proprietario;
@@ -86,6 +85,7 @@ int main() {
         imprimeListaOuSalvaEmArquivo(listaDeImoveisValorBuscado, "imprime");
       else
         cout << "Não existe imovel no intervalo de valor buscado!" << endl;
+      limpaBuffer();
     }
 
     else if (opcao == 3) {
@@ -168,5 +168,10 @@ int main() {
       system("clear");
     }
   } while (opcao != 0);
+
+  for (Imovel* imovel : listaDeImoveis) {
+    delete imovel;
+  }
+
   return 0;
 }

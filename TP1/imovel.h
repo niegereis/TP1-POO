@@ -39,5 +39,4 @@ class Imovel {
   void setBanheiros(int banheiros);
   friend ostream& operator<<(ostream& os, Imovel& imovel);
 };
-
 #endif  // IMOVEL_H

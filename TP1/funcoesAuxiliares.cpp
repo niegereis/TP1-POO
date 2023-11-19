@@ -20,11 +20,10 @@ void FuncoesAuxiliares::imprimeListaDeImoveis(vector<Imovel*> listaDeImoveis,
 
 void FuncoesAuxiliares::imprimeListaOuSalvaEmArquivo(
     vector<Imovel*> listaDeImoveis, string escolhaUsuario) {
-  string nomeArquivoSaida;
   if (escolhaUsuario == "imprime") {
     imprimeListaDeImoveis(listaDeImoveis, &cout);
   } else if (escolhaUsuario == "arquivo") {
-    nomeArquivoSaida = "saida.txt";
+    string nomeArquivoSaida = "saida.txt";
     ofstream arquivoDeSaida(nomeArquivoSaida);
     if (arquivoDeSaida.is_open()) {
       imprimeListaDeImoveis(listaDeImoveis, &arquivoDeSaida);
@@ -114,6 +113,11 @@ Imovel* FuncoesAuxiliares::criarImovelPelaLinha(string linha, int id) {
     return chacara;
   }
   return nullptr;
+}
+
+void FuncoesAuxiliares::limpaBuffer() {
+  while ((getchar()) != '\n')
+    ;
 }
 
 vector<Imovel*> FuncoesAuxiliares::obterListaDeImoveisPeloValor(
