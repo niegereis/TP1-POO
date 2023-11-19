@@ -9,6 +9,8 @@ Casa::Casa(int andares, bool salaJantar, int id, int numero, int quartos,
   this->salaJantar = salaJantar;
 }
 
+void Casa::func() { cout << "asd" << endl; }
+
 ostream& operator<<(ostream& os, Casa& casa) {
   os << "- - - - -" << endl;
   os << "\tProprietário " << casa.getPropietario() << endl;
