@@ -19,7 +19,6 @@ class Casa : public Imovel {
   void setAndares(int andares);
   int getSalaJantar();
   void setSalaJantar(bool salaJantar);
-  static void func();
 };
 
 #endif  // CASA_H
