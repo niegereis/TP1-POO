@@ -5,6 +5,7 @@
 #include <fstream>
 #include <iomanip>
 #include <iostream>
+#include <map>
 #include <sstream>
 #include <string>
 #include <vector>
@@ -22,7 +23,7 @@ void imprimeListaDeImoveis(vector<Imovel*> listaDeImoveis, ostream* ostream);
 void imprimeListaOuSalvaEmArquivo(vector<Imovel*> listaDeImoveis,
                                   string escolhaUsuario);
 bool ehProprietario(vector<Imovel*> listaImoveis, string proprietario);
-Imovel* criarImovelPelaLinha(string linha);
+Imovel* criarImovelPelaLinha(string linha, int id);
 vector<Imovel*> obterListaDeImoveisPeloValor(vector<Imovel*> listaDeImoveis,
                                              float valor);
 vector<Imovel*> obterListaDeImoveisPelaQuantidadeQuartos(
@@ -33,6 +34,7 @@ vector<Imovel*> obterListaDeImoveisPelaCidadeDoImovel(
     vector<Imovel*> listaDeImoveis, string cidade);
 vector<Imovel*> obterListaDeImoveisPeloProprietarioDoImovel(
     vector<Imovel*> listaDeImoveis, string proprietario);
+map<string, vector<Imovel*>> tabelaHash(vector<Imovel*> listaDeImoveis);
 };  // namespace FuncoesAuxiliares
 
 #endif  // FUNCOES_AUXILIARES_H

@@ -27,9 +27,11 @@ int main() {
     return 1;
   }
 
+  int id = 1;
   while (getline(arquivo, linha)) {
-    Imovel* imovel = criarImovelPelaLinha(linha);
+    Imovel* imovel = criarImovelPelaLinha(linha, id);
     listaDeImoveis.push_back(imovel);
+    id++;
   }
   arquivo.close();
 
@@ -50,8 +52,9 @@ int main() {
     cout << "5 - Obtêm um lista de imóveis pela cidade e ordena pelo valor "
             "decrescente."
          << endl;
-    cout << "6 - ?" << endl;
-    cout << "7 - Imprime na tela ou salva em um arquivo." << endl;
+    cout << "6 - Obtêm lista de imóveis pelo tipo(usando tabela hash)." << endl;
+    cout << "7 - Obtêm lista de imóveis pelo proprierário." << endl;
+    cout << "8 - Imprime na tela ou salva em um arquivo." << endl;
     cout << "------------------------------------------------------------------"
             "-----------------------"
          << endl;
@@ -63,7 +66,7 @@ int main() {
 
     if (opcao == 1) {
       string proprietario;
-      cout << "Digite o nome do proprietário que você deseja buscar: " << endl;
+      cout << "Digite o nome do proprietário que você deseja buscar: ";
       getline(cin, proprietario);
 
       if (ehProprietario(listaDeImoveis, proprietario)) {
@@ -75,7 +78,7 @@ int main() {
 
     else if (opcao == 2) {
       float valorBuscado;
-      cout << "Digite pelo valor do imóvel que você deseja buscar: " << endl;
+      cout << "Digite pelo valor do imóvel que você deseja buscar: ";
       cin >> valorBuscado;
       vector<Imovel*> listaDeImoveisValorBuscado =
           obterListaDeImoveisPeloValor(listaDeImoveis, valorBuscado);
@@ -88,8 +91,7 @@ int main() {
     else if (opcao == 3) {
       int qtQuartosBuscado;
       cout << "Digite pela quantidade de quartos do imóvel que você deseja "
-              "buscar: "
-           << endl;
+              "buscar: ";
       cin >> qtQuartosBuscado;
       vector<Imovel*> listaDeImoveisQuartosBuscado =
           obterListaDeImoveisPelaQuantidadeQuartos(listaDeImoveis,
@@ -102,7 +104,7 @@ int main() {
 
     else if (opcao == 4) {
       string tipoImovel;
-      cout << "Digite pelo tipo do imóvel que você deseja buscar: " << endl;
+      cout << "Digite pelo tipo do imóvel que você deseja buscar: ";
       getline(cin, tipoImovel);
       vector<Imovel*> listaDeImoveisTipoDoImovelBuscado =
           obterListaDeImoveisPeloTipoDoImovel(listaDeImoveis, tipoImovel);
@@ -115,8 +117,8 @@ int main() {
 
     else if (opcao == 5) {
       string cidade;
-      cout << "Digite pela cidade em que está o imóvel que você deseja buscar: "
-           << endl;
+      cout
+          << "Digite pela cidade em que está o imóvel que você deseja buscar: ";
       getline(cin, cidade);
       vector<Imovel*> listaDeImoveisCidadeDoImovelBuscado =
           obterListaDeImoveisPelaCidadeDoImovel(listaDeImoveis, cidade);
@@ -128,10 +130,20 @@ int main() {
     }
 
     else if (opcao == 6) {
+      string tipoBuscado;
+      cout << "Digite pelo tipo de imóvel que você deseja: ";
+      getline(cin, tipoBuscado);
+      map<string, vector<Imovel*>> tabelaDeImoveis = tabelaHash(listaDeImoveis);
+      if (!tabelaDeImoveis.empty())
+        imprimeListaOuSalvaEmArquivo(tabelaDeImoveis[tipoBuscado], "imprime");
+      else
+        cout << "Não existe nenhum imóvel do tipo buscado!" << endl;
+    }
+
+    else if (opcao == 7) {
       string proprietarioBuscado;
       cout << "Digite pelo proprietário que é dono do imóvel que você deseja "
-              "buscar : "
-           << endl;
+              "buscar : ";
       getline(cin, proprietarioBuscado);
       vector<Imovel*> listaDeImoveisProprietarioDoImovelBuscado =
           obterListaDeImoveisPeloProprietarioDoImovel(listaDeImoveis,
@@ -143,9 +155,10 @@ int main() {
         cout << "Não existe imovel do proprietário buscado!" << endl;
     }
 
-    else if (opcao == 7) {
+    else if (opcao == 8) {
       string escolhaDoUsuario;
-      cout << "Digite pela forma que deseja receber os dados dos imóveis: ";
+      cout << "Digite 'imprime' para imprimir no terminal ou 'arquivo' para "
+              "salvar os dados dos imóveis em um arquivo saida.txt:";
       getline(cin, escolhaDoUsuario);
       imprimeListaOuSalvaEmArquivo(listaDeImoveis, escolhaDoUsuario);
     }

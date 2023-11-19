@@ -36,6 +36,25 @@ void FuncoesAuxiliares::imprimeListaOuSalvaEmArquivo(
   }
 }
 
+map<string, vector<Imovel*>> FuncoesAuxiliares::tabelaHash(
+    vector<Imovel*> listaDeImoveis) {
+  map<string, vector<Imovel*>> tabelaHash;
+  tabelaHash["casa"] = vector<Imovel*>();
+  tabelaHash["apartamento"] = vector<Imovel*>();
+  tabelaHash["chacara"] = vector<Imovel*>();
+  for (Imovel* imovel : listaDeImoveis) {
+    Casa* casa = dynamic_cast<Casa*>(imovel);
+    if (casa != nullptr) tabelaHash["casa"].push_back(imovel);
+
+    Apartamento* apartamento = dynamic_cast<Apartamento*>(imovel);
+    if (apartamento != nullptr) tabelaHash["apartamento"].push_back(imovel);
+
+    Chacara* chacara = dynamic_cast<Chacara*>(imovel);
+    if (chacara != nullptr) tabelaHash["chacara"].push_back(imovel);
+  }
+  return tabelaHash;
+}
+
 bool FuncoesAuxiliares::ehProprietario(vector<Imovel*> listaImoveis,
                                        string proprietario) {
   for (Imovel* imovel : listaImoveis) {
@@ -44,7 +63,7 @@ bool FuncoesAuxiliares::ehProprietario(vector<Imovel*> listaImoveis,
   return false;
 }
 
-Imovel* FuncoesAuxiliares::criarImovelPelaLinha(string linha) {
+Imovel* FuncoesAuxiliares::criarImovelPelaLinha(string linha, int id) {
   istringstream palavra(linha);
   string valor, numero, quartos, banheiros, tipo, proprietario, rua, bairro,
       cidade;
@@ -64,7 +83,7 @@ Imovel* FuncoesAuxiliares::criarImovelPelaLinha(string linha) {
     bool salaJantar;
     palavra >> andares;
     palavra >> salaJantar;
-    Casa* casa = new Casa(andares, salaJantar, 0, stoi(numero), stoi(quartos),
+    Casa* casa = new Casa(andares, salaJantar, id, stoi(numero), stoi(quartos),
                           stoi(banheiros), stof(valor), proprietario, rua,
                           bairro, cidade);
     return casa;
@@ -76,9 +95,10 @@ Imovel* FuncoesAuxiliares::criarImovelPelaLinha(string linha) {
     palavra >> taxaCondominio;
     palavra >> elevador;
     palavra >> sacada;
-    Apartamento* apartamento = new Apartamento(
-        andar, taxaCondominio, elevador, sacada, 0, stoi(numero), stoi(quartos),
-        stoi(banheiros), stof(valor), proprietario, rua, bairro, cidade);
+    Apartamento* apartamento =
+        new Apartamento(andar, taxaCondominio, elevador, sacada, id,
+                        stoi(numero), stoi(quartos), stoi(banheiros),
+                        stof(valor), proprietario, rua, bairro, cidade);
     return apartamento;
   } else if (tipo == "chacara") {
     bool salaoFestas, salaoJogos, campoFutebol, churrasqueira, piscina;
@@ -89,7 +109,7 @@ Imovel* FuncoesAuxiliares::criarImovelPelaLinha(string linha) {
     palavra >> piscina;
     Chacara* chacara =
         new Chacara(salaoFestas, salaoJogos, campoFutebol, churrasqueira,
-                    piscina, 0, stoi(numero), stoi(quartos), stoi(banheiros),
+                    piscina, id, stoi(numero), stoi(quartos), stoi(banheiros),
                     stof(valor), proprietario, rua, bairro, cidade);
     return chacara;
   }
