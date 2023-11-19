@@ -133,7 +133,7 @@ int main() {
       string tipoBuscado;
       cout << "Digite pelo tipo de imóvel que você deseja: ";
       getline(cin, tipoBuscado);
-      map<string, vector<Imovel*>> tabelaDeImoveis = tabelaHash(listaDeImoveis);
+      map<string, vector<Imovel*>> tabelaDeImoveis = obterTabelaPeloTipo(listaDeImoveis);
       if (!tabelaDeImoveis.empty())
         imprimeListaOuSalvaEmArquivo(tabelaDeImoveis[tipoBuscado], "imprime");
       else

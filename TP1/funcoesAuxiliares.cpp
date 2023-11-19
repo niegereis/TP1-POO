@@ -35,7 +35,7 @@ void FuncoesAuxiliares::imprimeListaOuSalvaEmArquivo(
   }
 }
 
-map<string, vector<Imovel*>> FuncoesAuxiliares::tabelaHash(
+map<string, vector<Imovel*>> FuncoesAuxiliares::obterTabelaPeloTipo(
     vector<Imovel*> listaDeImoveis) {
   map<string, vector<Imovel*>> tabelaHash;
   tabelaHash["casa"] = vector<Imovel*>();
