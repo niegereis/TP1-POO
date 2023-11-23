@@ -145,12 +145,10 @@ int main() {
       cout << "Digite pelo proprietário que é dono do imóvel que você deseja "
               "buscar : ";
       getline(cin, proprietarioBuscado);
-      vector<Imovel*> listaDeImoveisProprietarioDoImovelBuscado =
-          obterListaDeImoveisPeloProprietarioDoImovel(listaDeImoveis,
-                                                      proprietarioBuscado);
+      vector<vector<Imovel*> :: iterator> listaDeImoveisProprietarioDoImovelBuscado =
+          obterListaDeImoveisPeloProprietarioDoImovel(listaDeImoveis, proprietarioBuscado);
       if (!listaDeImoveisProprietarioDoImovelBuscado.empty())
-        imprimeListaOuSalvaEmArquivo(listaDeImoveisProprietarioDoImovelBuscado,
-                                     "imprime");
+        imprimeListaDeImoveisIt(listaDeImoveisProprietarioDoImovelBuscado, &cout);
       else
         cout << "Não existe imovel do proprietário buscado!" << endl;
     }
