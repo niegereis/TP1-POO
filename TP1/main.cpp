@@ -99,10 +99,12 @@ int main() {
         vector<Imovel*> listaDeImoveisQuartosBuscado =
             obterListaDeImoveisPelaQuantidadeQuartos(listaDeImoveis,
                                                     qtQuartosBuscado);
+        cout << "\n\n" << qtQuartosBuscado << endl;
         if (!listaDeImoveisQuartosBuscado.empty())
           imprimeListaOuSalvaEmArquivo(listaDeImoveisQuartosBuscado, "imprime");
         else
           cout << "Não existe imovel no intervalo de quartos buscado!" << endl;
+        limpaBuffer();
         break;
       }
 
@@ -170,6 +172,7 @@ int main() {
         break;
       }
     }
+
     if (opcao != 0) {
       cout << "Digite enter para continuar...";
       getchar();
