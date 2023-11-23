@@ -18,13 +18,12 @@ void FuncoesAuxiliares::imprimeListaDeImoveis(vector<Imovel*> listaDeImoveis,
   }
 }
 
-void FuncoesAuxiliares::imprimeListaDeImoveisIt(vector<vector<Imovel*>::iterator> listaDeImoveis,
-                                              ostream* ostream) {
-  for (auto it  : listaDeImoveis) {
+void FuncoesAuxiliares::imprimeListaDeImoveisIt(
+    vector<vector<Imovel*>::iterator> listaDeImoveis, ostream* ostream) {
+  for (auto it : listaDeImoveis) {
     imprimeImovel(*it, ostream);
   }
 }
-
 
 void FuncoesAuxiliares::imprimeListaOuSalvaEmArquivo(
     vector<Imovel*> listaDeImoveis, string escolhaUsuario) {
@@ -186,7 +185,9 @@ vector<Imovel*> FuncoesAuxiliares::obterListaDeImoveisPelaCidadeDoImovel(
   return listaImoveisPelaCidade;
 }
 
-vector<vector<Imovel*>::iterator> FuncoesAuxiliares::obterListaDeImoveisPeloProprietarioDoImovel(vector<Imovel*> listaDeImoveis, string proprietario) {
+vector<vector<Imovel*>::iterator>
+FuncoesAuxiliares::obterListaDeImoveisPeloProprietarioDoImovel(
+    vector<Imovel*> listaDeImoveis, string proprietario) {
   vector<vector<Imovel*>::iterator> listaImoveisPelaProprietario;
   for (auto it = listaDeImoveis.begin(); it != listaDeImoveis.end(); ++it) {
     if (proprietario == (*it)->getPropietario())
