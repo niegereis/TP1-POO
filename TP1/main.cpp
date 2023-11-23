@@ -52,9 +52,8 @@ int main() {
     cout << "5 - Obtêm um lista de imóveis pela cidade e ordena pelo valor "
             "decrescente."
          << endl;
-    cout << "6 - Obtêm lista de imóveis pelo tipo(usando tabela hash)." << endl;
-    cout << "7 - Obtêm lista de imóveis pelo proprierário." << endl;
-    cout << "8 - Imprime na tela ou salva em um arquivo." << endl;
+    cout << "6 - Obtêm lista de imóveis pelo proprierário." << endl;
+    cout << "7 - Imprime na tela ou salva em um arquivo." << endl;
     cout << "------------------------------------------------------------------"
             "-----------------------"
          << endl;
@@ -63,9 +62,13 @@ int main() {
 
     limpaBuffer();
 
-    switch (opcao){
-      case 1:{
-        string proprietario;
+    string proprietario, tipoImovel, cidade, proprietarioBuscado,
+        escolhaDoUsuario;
+    float valorBuscado;
+    int qtQuartosBuscado;
+
+    switch (opcao) {
+      case 1: {
         cout << "Digite o nome do proprietário que você deseja buscar: ";
         getline(cin, proprietario);
 
@@ -77,8 +80,7 @@ int main() {
         break;
       }
 
-      case 2:{
-        float valorBuscado;
+      case 2: {
         cout << "Digite pelo valor do imóvel que você deseja buscar: ";
         cin >> valorBuscado;
         vector<Imovel*> listaDeImoveisValorBuscado =
@@ -92,13 +94,12 @@ int main() {
       }
 
       case 3: {
-        int qtQuartosBuscado;
         cout << "Digite pela quantidade de quartos do imóvel que você deseja "
                 "buscar: ";
         cin >> qtQuartosBuscado;
         vector<Imovel*> listaDeImoveisQuartosBuscado =
             obterListaDeImoveisPelaQuantidadeQuartos(listaDeImoveis,
-                                                    qtQuartosBuscado);
+                                                     qtQuartosBuscado);
         cout << "\n\n" << qtQuartosBuscado << endl;
         if (!listaDeImoveisQuartosBuscado.empty())
           imprimeListaOuSalvaEmArquivo(listaDeImoveisQuartosBuscado, "imprime");
@@ -109,62 +110,49 @@ int main() {
       }
 
       case 4: {
-        string tipoImovel;
         cout << "Digite pelo tipo do imóvel que você deseja buscar: ";
         getline(cin, tipoImovel);
         vector<Imovel*> listaDeImoveisTipoDoImovelBuscado =
             obterListaDeImoveisPeloTipoDoImovel(listaDeImoveis, tipoImovel);
         if (!listaDeImoveisTipoDoImovelBuscado.empty())
           imprimeListaOuSalvaEmArquivo(listaDeImoveisTipoDoImovelBuscado,
-                                      "imprime");
+                                       "imprime");
         else
           cout << "Não existe imovel do tipo buscado!" << endl;
         break;
       }
 
       case 5: {
-        string cidade;
-        cout
-            << "Digite pela cidade em que está o imóvel que você deseja buscar: ";
+        cout << "Digite pela cidade em que está o imóvel que você deseja "
+                "buscar: ";
         getline(cin, cidade);
         vector<Imovel*> listaDeImoveisCidadeDoImovelBuscado =
             obterListaDeImoveisPelaCidadeDoImovel(listaDeImoveis, cidade);
         if (!listaDeImoveisCidadeDoImovelBuscado.empty())
           imprimeListaOuSalvaEmArquivo(listaDeImoveisCidadeDoImovelBuscado,
-                                      "imprime");
+                                       "imprime");
         else
           cout << "Não existe imovel da cidade buscada!" << endl;
         break;
       }
 
       case 6: {
-        string tipoBuscado;
-        cout << "Digite pelo tipo de imóvel que você deseja: ";
-        getline(cin, tipoBuscado);
-        map<string, vector<Imovel*>> tabelaDeImoveis = obterTabelaPeloTipo(listaDeImoveis);
-        if (!tabelaDeImoveis.empty())
-          imprimeListaOuSalvaEmArquivo(tabelaDeImoveis[tipoBuscado], "imprime");
-        else
-          cout << "Não existe nenhum imóvel do tipo buscado!" << endl;
-        break;
-      }
-
-      case 7: {
-        string proprietarioBuscado;
         cout << "Digite pelo proprietário que é dono do imóvel que você deseja "
                 "buscar : ";
         getline(cin, proprietarioBuscado);
-        vector<vector<Imovel*> :: iterator> listaDeImoveisProprietarioDoImovelBuscado =
-            obterListaDeImoveisPeloProprietarioDoImovel(listaDeImoveis, proprietarioBuscado);
+        vector<vector<Imovel*>::iterator>
+            listaDeImoveisProprietarioDoImovelBuscado =
+                obterListaDeImoveisPeloProprietarioDoImovel(
+                    listaDeImoveis, proprietarioBuscado);
         if (!listaDeImoveisProprietarioDoImovelBuscado.empty())
-          imprimeListaDeImoveisIt(listaDeImoveisProprietarioDoImovelBuscado, &cout);
+          imprimeListaDeImoveisIt(listaDeImoveisProprietarioDoImovelBuscado,
+                                  &cout);
         else
           cout << "Não existe imovel do proprietário buscado!" << endl;
         break;
       }
 
-      case 8: {
-        string escolhaDoUsuario;
+      case 7: {
         cout << "Digite 'imprime' para imprimir no terminal ou 'arquivo' para "
                 "salvar os dados dos imóveis em um arquivo saida.txt:";
         getline(cin, escolhaDoUsuario);

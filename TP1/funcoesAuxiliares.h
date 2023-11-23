@@ -20,7 +20,7 @@ using namespace std;
 namespace FuncoesAuxiliares {
 void imprimeImovel(Imovel* imovel, ostream* ostream);
 void imprimeListaDeImoveisIt(vector<vector<Imovel*>::iterator> listaDeImoveis,
-                                              ostream* ostream);
+                             ostream* ostream);
 void imprimeListaDeImoveis(vector<Imovel*> listaDeImoveis, ostream* ostream);
 void imprimeListaOuSalvaEmArquivo(vector<Imovel*> listaDeImoveis,
                                   string escolhaUsuario);
@@ -36,7 +36,8 @@ vector<Imovel*> obterListaDeImoveisPelaCidadeDoImovel(
     vector<Imovel*> listaDeImoveis, string cidade);
 vector<vector<Imovel*>::iterator> obterListaDeImoveisPeloProprietarioDoImovel(
     vector<Imovel*> listaDeImoveis, string proprietario);
-map<string, vector<Imovel*>> obterTabelaPeloTipo(vector<Imovel*> listaDeImoveis);
+map<string, vector<Imovel*>> obterTabelaPeloTipo(
+    vector<Imovel*> listaDeImoveis);
 void limpaBuffer();
 };  // namespace FuncoesAuxiliares
 
