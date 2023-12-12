@@ -36,8 +36,6 @@ vector<Imovel*> obterListaDeImoveisPelaCidadeDoImovel(
     vector<Imovel*> listaDeImoveis, string cidade);
 vector<vector<Imovel*>::iterator> obterListaDeImoveisPeloProprietarioDoImovel(
     vector<Imovel*> listaDeImoveis, string proprietario);
-map<string, vector<Imovel*>> obterTabelaPeloTipo(
-    vector<Imovel*> listaDeImoveis);
 void limpaBuffer();
 };  // namespace FuncoesAuxiliares
 

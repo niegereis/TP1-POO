@@ -1,3 +1,8 @@
+// Membros do grupo
+//  Eduardo Silva
+//  Guilherme Souza
+//  Niege Reis
+
 #include <stdio.h>
 
 #include <fstream>

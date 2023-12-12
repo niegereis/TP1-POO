@@ -42,25 +42,6 @@ void FuncoesAuxiliares::imprimeListaOuSalvaEmArquivo(
   }
 }
 
-map<string, vector<Imovel*>> FuncoesAuxiliares::obterTabelaPeloTipo(
-    vector<Imovel*> listaDeImoveis) {
-  map<string, vector<Imovel*>> tabelaHash;
-  tabelaHash["casa"] = vector<Imovel*>();
-  tabelaHash["apartamento"] = vector<Imovel*>();
-  tabelaHash["chacara"] = vector<Imovel*>();
-  for (Imovel* imovel : listaDeImoveis) {
-    Casa* casa = dynamic_cast<Casa*>(imovel);
-    if (casa != nullptr) tabelaHash["casa"].push_back(imovel);
-
-    Apartamento* apartamento = dynamic_cast<Apartamento*>(imovel);
-    if (apartamento != nullptr) tabelaHash["apartamento"].push_back(imovel);
-
-    Chacara* chacara = dynamic_cast<Chacara*>(imovel);
-    if (chacara != nullptr) tabelaHash["chacara"].push_back(imovel);
-  }
-  return tabelaHash;
-}
-
 bool FuncoesAuxiliares::ehProprietario(vector<Imovel*> listaImoveis,
                                        string proprietario) {
   for (Imovel* imovel : listaImoveis) {

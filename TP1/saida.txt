@@ -5,7 +5,7 @@
 	Rua: The Lawns
 	Bairro: West Cardoon
 	Cidade: Mobile
-	Característica Específica: Apartamento tem elevador!
+	Característica Específica: Apartamento não tem elevador...
 - - - - -
 
 - - - - -
@@ -35,7 +35,7 @@
 	Rua: Rose Street
 	Bairro: Prospect Place
 	Cidade: Hoquiam
-	Característica Específica: Apartamento tem elevador!
+	Característica Específica: Apartamento não tem elevador...
 - - - - -
 
 - - - - -
